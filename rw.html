@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public.css" />
+    <style>
+      .photo {
+        width: 80%;
+        height: 560px;
+        margin: 30px 10%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .photo img {
+        width: calc(100% / 3);
+      }
+      .photo img:hover {
+        /* 产生过渡动画 */
+        transition: all 0.3s;
+        width: 50%;
+        /* 使图片产生缩放和旋转 */
+        transform: scale(1.25) rotateZ(4deg);
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="./有关图片/海绵宝宝2.png" alt="网络有问题" width="100%" />
+      </div>
+      <div class="nav">
+        <a href="index.html">网站首页</a>
+        <a href="zp.html">作品简介</a>
+        <a href="js.html">角色介绍</a>
+        <a href="jm.html">精美图片</a>
+        <a href="jc.html">精彩视频</a>
+        <a href="lx.html">联系我们</a>
+        <a href="rw.html">人物展示</a>
+      </div>
+      <div class="container">
+        <div class="photo">
+          <img src="./有关图片/10.jpg" alt="" />
+          <img src="./有关图片/7.jpg" alt="" />
+          <img src="./有关图片/8.jpg" alt="" />
+        </div>
+      </div>
+      <div class="footer">
+        <p>@版权所有&nbsp;&nbsp;&nbsp; , &nbsp;&nbsp;&nbsp;侵权必究</p>
+        <p>联系电话: 166&nbsp;0447&nbsp;2787</p>
+      </div>
+    </div>
+  </body>
+</html>

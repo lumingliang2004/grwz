@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="public.css" />
+    <style>
+      .tupian {
+        width: 800px;
+        height: 540px;
+      }
+      #tabs {
+        width: 800px;
+        height: 540px;
+        overflow: hidden;
+        float: left;
+        position: relative;
+      }
+      #tabs > a:not(:first-child) {
+        display: none;
+      }
+    </style>
+    <script>
+      var len = document.getElementsByName("i");
+      var pos = 0;
+      function changeimage() {
+        len[pos].style.display = "none";
+        pos++;
+        if (pos == len.length) pos = 0;
+        len[pos].style.display = "block";
+      }
+      setInterval("changeimage()", 3000);
+    </script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <img src="./有关图片/海绵宝宝2.png" alt="网络有问题" width="100%" />
+      </div>
+      <div class="nav">
+        <a href="index.html">网站首页</a>
+        <a href="zp.html">作品简介</a>
+        <a href="js.html">角色介绍</a>
+        <a href="jm.html">精美图片</a>
+        <a href="jc.html">精彩视频</a>
+        <a href="lx.html">联系我们</a>
+        <a href="rw.html">人物展示</a>
+      </div>
+      <div class="container" id="tabs">
+        <div class="zb">
+          <h1 style="color: red; text-align: center">精美图片</h1>
+          <br />
+          <hr />
+          <br />
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/1.jpeg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/2.jpeg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/4.jpg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/5.jpg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/6.jpg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/7.jpg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/8.jpg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a href="#" name="i"
+            ><img
+              class="tupian"
+              src="./有关图片/9.jpg"
+              alt="网络有问题"
+              class="ygtp"
+              width="100%"
+          /></a>
+          <a
+            href="photo.html"
+            style="float: right; margin: 20px"
+            target="_blank"
+            >点击查看更多</a
+          >
+        </div>
+      </div>
+      <div class="footer" style="margin: 20px auto">
+        <p>@版权所有&nbsp;&nbsp;&nbsp; , &nbsp;&nbsp;&nbsp;侵权必究</p>
+        <p>联系电话: 166&nbsp;0447&nbsp;2787</p>
+      </div>
+    </div>
+  </body>
+</html>
